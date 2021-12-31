@@ -1,0 +1,8 @@
+---
+  - name: getpython
+    hosts: servers
+    tasks:
+      - name: Make sure Python3 is installed
+        yum:
+          name: python3
+          state: latest
